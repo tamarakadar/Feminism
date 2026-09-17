@@ -1,0 +1,131 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+    background-color: blueviolet;
+    color: aquamarine;
+   
+}
+
+html {
+    font-family: monospace;
+    font-size: 14px;
+}
+
+h1,h2 {
+    text-align: center;
+}
+a {
+    text-decoration: none;
+}
+
+/*
+Start of the head er
+*/
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%; 
+    min-width: 800px; 
+    max-width: 1280px
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 10px;
+}
+
+ header figure {
+    width: 80px; 
+ }
+
+ header figure img {
+    width: 100%;
+ }
+
+ header nav {
+    width: 70%;
+    border: 1px solid aquamarine;
+    text-align: center; 
+    
+ }
+ header nav ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    margin-right: 10px;
+ }
+ header nav li {
+   padding: 5px;
+ }
+ /*
+End of the header
+*/
+/*main*/
+/*selector id #nameID {} */ 
+/**/
+section {
+    border-top: 1px solid aquamarine;
+    margin-bottom: 1em; /*relative measure 
+    unit, the size in px is related to 
+    the father container*/
+}
+#hero 
+{
+    width: 100%;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#hero #text-hero {
+    position: absolute;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 3px;
+}
+
+#hero #background-hero img{
+    width: 100%;
+}
+#hero .button-container {
+    text-align: center;
+}
+#hero .button-hero {
+    display: inline-block;
+    background-color: rgb(226, 27, 143);
+    color: rgb(43, 226, 180);
+    padding: 5px;
+    margin-top: 20px;
+    text-align: center;
+}
+/*end of the section hero*/
+
+/*start of the blog*/
+#history {
+    flex-direction: column;
+    align-items: center;
+    
+}
+#history .article-history{
+    display: flex;
+    width: 90%;
+    margin-bottom: 30px;
+    align-items: center;
+}
+#history .article-history figure {
+    width: 80%;
+    margin: 10px;
+    overflow: none;
+}
+
+#history .article-history figure img {
+    width: 100%;
+}
+/*end of the blog*/
